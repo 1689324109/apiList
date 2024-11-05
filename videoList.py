@@ -18,8 +18,9 @@ def save_news_body(temp, file_path="Z:/win10ref/video/"):
 
 def check_url(url):
     # 打开数据库连接
-    db = pymysql.connect(host='192.168.17.220',
+    db = pymysql.connect(host='us-lsj-ptlx-xhfrp.xhzdim.top',
                         user='root',
+                        port=63306,
                         password='123456',
                         database='api-videp')
     
@@ -39,10 +40,11 @@ def check_url(url):
 
 def save_mysql(results):
     # 连接到 MySQL 数据库
-    db = pymysql.connect(host='192.168.17.220',
-                         user='root',
-                         password='123456',
-                         database='api-videp')
+    db = pymysql.connect(host='us-lsj-ptlx-xhfrp.xhzdim.top',
+                        user='root',
+                        port=63306,
+                        password='123456',
+                        database='api-videp')
     
     cursor = db.cursor()
     
