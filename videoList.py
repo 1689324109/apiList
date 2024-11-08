@@ -18,7 +18,7 @@ def save_news_body(temp, file_path="Z:/win10ref/video/"):
 
 def check_url(url):
     # 打开数据库连接
-    db = pymysql.connect(host='us-lsj-ptlx-xhfrp.xhzdim.top',
+    db = pymysql.connect(host='us-lsj-jplx-xhfrp.xhzdim.top',
                         user='root',
                         port=63306,
                         password='123456',
@@ -40,7 +40,7 @@ def check_url(url):
 
 def save_mysql(results):
     # 连接到 MySQL 数据库
-    db = pymysql.connect(host='us-lsj-ptlx-xhfrp.xhzdim.top',
+    db = pymysql.connect(host='us-lsj-jplx-xhfrp.xhzdim.top',
                         user='root',
                         port=63306,
                         password='123456',
@@ -105,6 +105,6 @@ def getHref(html_content):
 
 if __name__ == "__main__":
     # 测试获取第一页内容 1123 1321 1561
-    for i in range(4461,26358):
+    for i in range(1,26358):
         getRes(str(i))
 
